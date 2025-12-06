@@ -108,7 +108,7 @@ def gramatica_para_afnd(caminho_arquivo):
         
     return afnd
 
-# --- ETAPA 2: AFND -> AFD (Subset Construction) ---
+# --- ETAPA 2: AFND -> AFD ---
 def afnd_para_afd(afnd):
     afd = Automato("AFD Convertido")
     afd.alfabeto = afnd.alfabeto
@@ -256,7 +256,7 @@ def salvar_csv(automato, nome_arquivo):
         print(f"Erro ao salvar arquivo CSV: {e}")
 
 # ==========================================
-# 3. EXECUÇÃO DINÂMICA (MODIFICADO)
+# 3. EXECUÇÃO DINÂMICA
 # ==========================================
 
 if __name__ == "__main__":
